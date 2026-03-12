@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abionyx Pharma — Analyse & Perspectives 12/03/2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#04060f;--surface:#080c18;--surface2:#0d1226;--border:#131a30;--accent:#818cf8;--green:#34d399;--blue:#38bdf8;--warn:#fbbf24;--danger:#f87171;--orange:#fb923c;--purple:#c084fc;--teal:#2dd4bf;--text:#b8bde0;--heading:#eef0ff;--muted:#1e2448}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Exo 2',sans-serif;font-size:14.5px;line-height:1.7;padding:28px 18px 60px}
+.wrap{max-width:900px;margin:0 auto}
+.hero{background:linear-gradient(135deg,#05071a,#07091e);border:1px solid var(--border);border-top:3px solid var(--accent);border-radius:14px;padding:26px 28px 22px;margin-bottom:24px;position:relative;overflow:hidden}
+.hero::before{content:'🩸';position:absolute;right:28px;top:50%;transform:translateY(-50%);font-size:80px;opacity:.06;pointer-events:none}
+.badge{display:inline-flex;align-items:center;background:rgba(129,140,248,.1);border:1px solid rgba(129,140,248,.28);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:700;color:var(--accent);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-size:22px;font-weight:900;color:var(--heading);line-height:1.25;margin-bottom:10px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--muted)}
+.alert{border-radius:12px;padding:16px 20px;margin-bottom:14px}
+.ag{background:rgba(52,211,153,.07);border:1px solid rgba(52,211,153,.28)}
+.ag .at{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.ag p{color:#a7f3d0;font-size:13.5px;margin-bottom:5px}
+.aw{background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.28)}
+.aw .at{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--warn);margin-bottom:8px}
+.aw p{color:#fde68a;font-size:13.5px;margin-bottom:5px}
+.ab{background:rgba(56,189,248,.07);border:1px solid rgba(56,189,248,.28)}
+.ab .at{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
+.ab p{color:#bae6fd;font-size:13.5px;margin-bottom:5px}
+.alert p:last-child{margin-bottom:0}
+strong{color:var(--heading);font-weight:700}
+.slbl{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.slbl::after{content:'';flex:1;height:1px;background:var(--border)}
+.kg{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:10px;margin-bottom:28px}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.kl{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:5px}
+.kv{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:600;color:var(--heading);margin-bottom:3px}
+.kd{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700}
+.kd.up{color:var(--green)}.kd.warn{color:var(--warn)}.kd.bl{color:var(--blue)}.kd.red{color:var(--danger)}.kd.p{color:var(--accent)}.kd.t{color:var(--teal)}
+.ks{font-size:10.5px;color:var(--muted);margin-top:2px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 22px;margin-bottom:12px}
+.card h3{font-size:14.5px;font-weight:700;color:var(--heading);margin-bottom:11px;display:flex;align-items:center;gap:9px}
+.ic{width:26px;height:26px;border-radius:6px;background:rgba(129,140,248,.12);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.card p{color:#6872a8;margin-bottom:9px;font-size:14px}
+.card p:last-child{margin-bottom:0}
+.hl{color:var(--green);font-weight:600}.hlb{color:var(--blue);font-weight:600}.hlw{color:var(--warn);font-weight:600}.hlr{color:var(--danger);font-weight:600}.hlp{color:var(--accent);font-weight:600}.hlo{color:var(--orange);font-weight:600}.hlt{color:var(--teal);font-weight:600}
+.dt{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0}
+.dt th{text-align:left;padding:8px 10px;background:var(--surface2);color:var(--muted);font-size:10.5px;text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.dt td{padding:8px 10px;border-bottom:1px solid var(--border);color:#6872a8}
+.dt tr:last-child td{border-bottom:none}
+.dt td:first-child{color:var(--heading);font-weight:600}
+.dt td.g{color:var(--green);font-family:'JetBrains Mono',monospace;font-weight:700}
+.dt td.b{color:var(--blue);font-family:'JetBrains Mono',monospace;font-weight:700}
+.dt td.w{color:var(--warn);font-family:'JetBrains Mono',monospace;font-weight:700}
+.dt td.r{color:var(--danger);font-family:'JetBrains Mono',monospace;font-weight:700}
+.dt td.p{color:var(--accent);font-family:'JetBrains Mono',monospace;font-weight:700}
+.dt td.t{color:var(--teal);font-family:'JetBrains Mono',monospace;font-weight:700}
+.ul{list-style:none;padding:0}
+.ul li{padding:4px 0 4px 20px;position:relative;color:#6872a8;font-size:14px}
+.ul li::before{content:'→';position:absolute;left:0;color:var(--green);font-weight:700}
+.ul li.risk::before{content:'⚠';color:var(--danger);font-size:11px;top:6px}
+.ul li.neu::before{content:'◆';color:var(--blue);font-size:9px;top:7px}
+.tl{position:relative;padding-left:20px}
+.tl::before{content:'';position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--border)}
+.tli{position:relative;padding-bottom:16px}
+.tli:last-child{padding-bottom:0}
+.tld{position:absolute;left:-18px;top:5px;width:10px;height:10px;border-radius:50%;border:2px solid var(--accent);background:var(--bg)}
+.tld.g{border-color:var(--green)}.tld.w{border-color:var(--warn)}.tld.p{border-color:var(--purple)}.tld.b{border-color:var(--blue)}.tld.t{border-color:var(--teal)}
+.tldate{font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--accent);font-weight:600;margin-bottom:2px}
+.tllbl{font-size:13.5px;color:var(--heading);font-weight:600}
+.tldesc{font-size:12.5px;color:var(--muted);margin-top:2px}
+.frow{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--border)}
+.frow:last-child{border-bottom:none}
+.flvl{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);width:80px}
+.fprice{font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:600;color:var(--heading);width:72px}
+.fbar{flex:1;height:4px;background:var(--surface2);border-radius:2px;overflow:hidden}
+.fbar-fill{height:100%;border-radius:2px}
+.ftag{width:120px;text-align:right}
+.tag{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700}
+.tg{background:rgba(52,211,153,.12);color:var(--green)}
+.tb{background:rgba(56,189,248,.12);color:var(--blue)}
+.tw{background:rgba(251,191,36,.12);color:var(--warn)}
+.tr{background:rgba(248,113,113,.12);color:var(--danger)}
+.tp{background:rgba(129,140,248,.12);color:var(--accent)}
+.tt{background:rgba(45,212,191,.12);color:var(--teal)}
+.to{background:rgba(251,146,60,.12);color:var(--orange)}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}
+@media(max-width:600px){.pg{grid-template-columns:1fr}}
+.pc{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px}
+.pc .hz{font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.pc h4{font-size:13px;color:var(--heading);margin-bottom:6px}
+.pc ul{list-style:none;padding:0}
+.pc ul li{font-size:12.5px;color:var(--muted);padding:3px 0 3px 12px;position:relative}
+.pc ul li::before{content:'·';position:absolute;left:0;font-weight:900;font-size:16px;top:-1px}
+.cpt{background:var(--surface2);border-radius:10px;padding:14px 16px;margin:12px 0}
+.cpt-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--border);font-size:13px}
+.cpt-row:last-child{border-bottom:none}
+.cpt-lbl{color:var(--muted)}
+.cpt-val{font-family:'JetBrains Mono',monospace;font-weight:700}
+.verdict{background:linear-gradient(135deg,rgba(129,140,248,.05),rgba(45,212,191,.03));border:1px solid rgba(129,140,248,.2);border-radius:12px;padding:22px}
+.verdict .vt{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.verdict p{color:#6872a8;margin-bottom:9px;font-size:14px}
+.verdict p:last-child{margin-bottom:0}
+.conclu{font-size:14.5px;font-weight:600;color:var(--heading);border-top:1px solid var(--border);padding-top:13px;margin-top:13px}
+.gap{height:26px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <div class="badge">🩸 Analyse Forum · ABNX · Euronext Paris Compartiment C · PEA-PME</div>
+  <h1>Abionyx Pharma — Résultats 2025 &amp; Analyse Complète<br>+ Perspectives CT / MT / LT</h1>
+  <div class="hero-meta">
+    <span>📅 12 mars 2026 — résultats annuels publiés ce jour à 18h00</span>
+    <span>💶 Cours ~3,360 € (+0,45%)</span>
+    <span>🩸 Sepsis · apoA-I · HDL thérapeutique · Toulouse</span>
+    <span>⚠️ NPC — pas un conseil en investissement</span>
+  </div>
+</div>
+
+<!-- ALERT RÉSULTATS PUBLIÉS -->
+<div class="alert ag">
+  <div class="at">📋 Résultats annuels 2025 — publiés ce jour 12/03/2026 à 18h00</div>
+  <p><strong>Abionyx Pharma publie ce soir ses résultats consolidés 2025.</strong> Les points clés : CA consolidé 4,1 M€ (uniquement IRIS Pharma CRO), résultat net -5,55 M€, trésorerie 3,5 M€ au 31/12/2025. Le titre consolide autour de 3,36 € (+0,45%) dans un contexte de marché difficile — la hausse de +218% du titre sur 2025 explique les provisions de charges sociales sur AGA qui alourdissent mécaniquement le résultat opérationnel. Ce point comptable ne traduit pas une dégradation opérationnelle réelle.</p>
+</div>
+
+<!-- ALERT TRÉSORERIE -->
+<div class="alert ab">
+  <div class="at">💰 Runway fin juin 2027 — France 2030 : 6,5 M€ encore à recevoir</div>
+  <p><strong>La trésorerie de 3,5 M€ au 31/12/2025 assure une visibilité financière jusqu'à fin 2026 en autonomie, étendue à fin juin 2027 avec les versements restants de France 2030.</strong> Le plan i-Démo représente 8,7 M€ de soutien d'État non dilutif pour développer les thérapies anti-sepsis, dont 6,5 M€ encore à percevoir. Ce financement public est un bouclier anti-dilution jusqu'à la prochaine étape clinique majeure.</p>
+</div>
+
+<!-- KPIs -->
+<div class="slbl">Chiffres clés — Résultats annuels 2025 (IFRS consolidés)</div>
+<div class="kg">
+  <div class="kpi"><div class="kl">CA consolidé 2025</div><div class="kv">4,1 M€</div><div class="kd warn">▼ vs 4,6 M€ 2024</div><div class="ks">100% IRIS Pharma CRO</div></div>
+  <div class="kpi"><div class="kl">Résultat net</div><div class="kv">-5,55 M€</div><div class="kd red">▼ vs -4,38 M€</div><div class="ks">dont provision AGA non-cash</div></div>
+  <div class="kpi"><div class="kl">Trésorerie 31/12</div><div class="kv">3,5 M€</div><div class="kd up">▲ vs 3,2 M€ fin 2024</div><div class="ks">progression malgré pertes</div></div>
+  <div class="kpi"><div class="kl">France 2030 restant</div><div class="kv">6,5 M€</div><div class="kd up">▲ à recevoir</div><div class="ks">financement non dilutif État</div></div>
+  <div class="kpi"><div class="kl">Runway</div><div class="kv">juin 2027</div><div class="kd bl">◆ visibilité étendue</div><div class="ks">avec France 2030</div></div>
+  <div class="kpi"><div class="kl">Perf. cours 2025</div><div class="kv">+218%</div><div class="kd up">▲ 3ème meilleure</div><div class="ks">vs médiane small caps</div></div>
+</div>
+
+<!-- ANALYSE RÉSULTATS -->
+<div class="gap"></div>
+<div class="slbl">📋 Décryptage des résultats 2025 — ce qui est réel, ce qui est comptable</div>
+<div class="card">
+  <h3><span class="ic">🔍</span> Résultat net -5,55 M€ : ne pas confondre charge non-cash et dérapage opérationnel</h3>
+  <p>Le résultat net 2025 se dégrade de -1,17 M€ vs 2024. Mais l'analyse détaillée révèle que <strong>cette dégradation est quasi-intégralement imputable à une provision comptable non-cash</strong> : l'actualisation de la provision pour cotisations sociales sur les plans d'actions gratuites (AGA), calculée sur le cours de bourse au 31/12/2025 — qui a bondi de +218% sur l'exercice.</p>
+  <div class="cpt">
+    <div class="cpt-row"><div class="cpt-lbl">Résultat opérationnel publié</div><div class="cpt-val" style="color:var(--danger)">-5 538 K€</div></div>
+    <div class="cpt-row"><div class="cpt-lbl">Résultat opérationnel hors provision AGA</div><div class="cpt-val" style="color:var(--warn)">-4 479 K€</div></div>
+    <div class="cpt-row"><div class="cpt-lbl">Résultat opérationnel 2024 (comparable)</div><div class="cpt-val" style="color:var(--warn)">-4 479 K€</div></div>
+    <div class="cpt-row"><div class="cpt-lbl">Dépenses R&D 2025</div><div class="cpt-val" style="color:var(--green)">-1 518 K€ ↓ vs -1 900 K€</div></div>
+    <div class="cpt-row"><div class="cpt-lbl">IRIS Pharma résultat net</div><div class="cpt-val" style="color:var(--green)">~0 (quasi-équilibre)</div></div>
+    <div class="cpt-row"><div class="cpt-lbl">Flux trésorerie opérationnel</div><div class="cpt-val" style="color:var(--teal)">-2,9 M€ ↑ vs -3,6 M€</div></div>
+  </div>
+  <p><strong>Conclusion :</strong> hors effet AGA non-cash, le résultat opérationnel 2025 est <span class="hl">identique à 2024</span>. Les dépenses R&D diminuent (-21%), le cash burn opérationnel s'améliore (-2,9 M€ vs -3,6 M€). La société <span class="hl">brûle moins de cash en réalité</span> que ce que suggère le résultat net. Le financement France 2030 (+3,4 M€ de flux financier) a même permis d'augmenter la trésorerie à 3,5 M€.</p>
+</div>
+
+<!-- PRÉSENTATION -->
+<div class="gap"></div>
+<div class="slbl">Présentation — qui est Abionyx Pharma ?</div>
+<div class="card">
+  <h3><span class="ic">🧬</span> La seule biotech au monde centrée sur l'apoA-I thérapeutique dans le sepsis</h3>
+  <p>Abionyx Pharma (anciennement Cerephex/Genfit spinoff partiel) développe une <strong>plateforme technologique unique basée sur l'apoA-I recombinante naturelle</strong> — la principale protéine des HDL (bon cholestérol). Cette protéine joue un rôle central dans la régulation immuno-inflammatoire, et Abionyx a montré son implication causale dans le sepsis — une première mondiale publiée dans <em>Scientific Reports (Nature)</em>.</p>
+  <table class="dt">
+    <tr><th>Programme</th><th>Indication</th><th>Stade</th><th>Catalyseur</th></tr>
+    <tr><td>ABNX-100 (CER-001)</td><td style="color:#6872a8;font-size:12px">Sepsis — 3ème cause de mortalité mondiale</td><td class="b">Pré-Phase clinique</td><td class="t">Phase clinique 2026+</td></tr>
+    <tr><td>ABNX-100 (CER-001)</td><td style="color:#6872a8;font-size:12px">Déficience LCAT (Maladie de Norum) — rare</td><td class="g">AAC (accès compassionnel)</td><td class="g">Données réelles ✓</td></tr>
+    <tr><td>IRIS Pharma (filiale)</td><td style="color:#6872a8;font-size:12px">CRO ophtalmologie</td><td class="g">Commercial actif</td><td class="warn">CA récurrent ~4 M€/an</td></tr>
+  </table>
+  <p style="margin-top:8px"><strong>Le sepsis est la 3ème cause de mortalité dans le monde</strong> — environ 11 millions de décès par an. Il n'existe aucun traitement spécifique approuvé à ce jour. La découverte de la causalité génétique de l'apoA-I dans le sepsis (publiée dans <em>Nature Scientific Reports</em>) est une validation scientifique de premier plan qui positionne Abionyx comme acteur de référence sur ce segment.</p>
+</div>
+
+<!-- NEWS RÉCENTES -->
+<div class="gap"></div>
+<div class="slbl">Chronologie 2025-2026 — une série de catalyseurs structurants</div>
+<div class="card">
+  <h3><span class="ic">⚡</span> Six mois de transformations majeures</h3>
+  <div class="tl">
+    <div class="tli">
+      <div class="tld g"></div>
+      <div class="tldate">AOÛT 2025 ✅</div>
+      <div class="tllbl">Discussions stratégiques avec un "grand acteur du sepsis" <span class="tag tg">PARTENARIAT POTENTIEL</span></div>
+      <div class="tldesc">Abionyx annonce l'ouverture de discussions avec un acteur de premier plan pour une collaboration stratégique d'envergure sur CER-001 dans le sepsis. Identité non divulguée. Ce type d'annonce précède généralement un accord de licence ou de co-développement.</div>
+    </div>
+    <div class="tli">
+      <div class="tld g"></div>
+      <div class="tldate">12 NOV. 2025 ✅</div>
+      <div class="tllbl">Discussions avancées IHU Sepsis (Paris-Saclay / AP-HP / CEA / Inserm) <span class="tag tg">SCIENTIFIQUE MAJEUR</span></div>
+      <div class="tldesc">L'IHU Sepsis est le premier centre mondial intégré dédié exclusivement au sepsis — 275 chercheurs, 94 cliniciens, 60 équipes multidisciplinaires. Ce partenariat vise à créer la première plateforme mondiale intégrée de traitement du sepsis, combinant les thérapeutiques apoA-I d'Abionyx avec l'infrastructure clinique de l'IHU. Validation académique exceptionnelle.</div>
+    </div>
+    <div class="tli">
+      <div class="tld g"></div>
+      <div class="tldate">20 NOV. 2025 ✅</div>
+      <div class="tllbl">Partenariat exclusif mondial SEBIA — diagnostic du sepsis <span class="tag tg">DEAL SIGNÉ</span></div>
+      <div class="tldesc">SEBIA est un leader mondial du diagnostic in vitro par électrophorèse. Ce partenariat exclusif mondial dans les tests diagnostiques du sepsis complète la chaîne valeur : diagnostic + traitement. Abionyx n'est plus seulement un acteur thérapeutique mais un acteur intégré du sepsis.</div>
+    </div>
+    <div class="tli">
+      <div class="tld b"></div>
+      <div class="tldate">NOV. 2025 ✅</div>
+      <div class="tllbl">Publication Nature Scientific Reports — causalité génétique apoA-I/sepsis <span class="tag tb">VALIDATION SCIENCE</span></div>
+      <div class="tldesc">Publication dans Scientific Reports (groupe Nature) démontrant la causalité génétique de l'apoA-I dans le sepsis. C'est le verrou scientifique le plus important — avant cette publication, la corrélation était établie mais pas la causalité. Ce papier légitime le mécanisme d'action de toute la plateforme Abionyx.</div>
+    </div>
+    <div class="tli">
+      <div class="tld g"></div>
+      <div class="tldate">DÉC. 2025 ✅</div>
+      <div class="tllbl">Augmentation de capital <span class="tag tg">FINANCEMENT</span></div>
+      <div class="tldesc">Levée de fonds pour renforcer les ressources en vue de la prochaine phase clinique. Vient s'ajouter au financement France 2030 non dilutif.</div>
+    </div>
+    <div class="tli">
+      <div class="tld p"></div>
+      <div class="tldate">12 MARS 2026 — CE JOUR</div>
+      <div class="tllbl">Résultats annuels 2025 publiés <span class="tag tp">PUBLIÉ 18H00</span></div>
+      <div class="tldesc">CA 4,1 M€, résultat net -5,55 M€ (dont provision AGA non-cash), trésorerie 3,5 M€ + France 2030 6,5 M€ à recevoir → runway juin 2027. Phase clinique sepsis en préparation active.</div>
+    </div>
+    <div class="tli">
+      <div class="tld w"></div>
+      <div class="tldate">2026 — EN COURS</div>
+      <div class="tllbl">Préparation phase clinique sepsis + optimisation bioproduction <span class="tag tw">CATALYSEUR MAJEUR</span></div>
+      <div class="tldesc">L'étape suivante est le démarrage d'une phase clinique dans le sepsis — catalyseur le plus important de l'histoire de la société. La bioproduction industrielle est en cours d'optimisation grâce au financement France 2030.</div>
+    </div>
+  </div>
+</div>
+
+<!-- TECHNIQUE -->
+<div class="gap"></div>
+<div class="slbl">Analyse technique — Graphique journalier au 12/03/2026</div>
+<div class="card">
+  <h3><span class="ic">📈</span> Cours 3,360 € · RSI 49,26 · MACD légèrement négatif · Consolidation post-spike +400%</h3>
+  <p>Le graphique journalier montre un titre qui a réalisé une performance exceptionnelle sur 2025 : de ~0,85-1,00 € début 2025 jusqu'à un pic de ~<strong>5,00 €</strong> en septembre 2025 — soit <strong>+400% à +500% en quelques mois</strong>. Depuis, le titre corrige et consolide autour du support horizontal majeur à <strong>3,36 €</strong>, qui correspond à l'ancien plus haut de résistance devenu support.</p>
+
+  <div style="margin:14px 0">
+    <div class="frow"><div class="flvl">Support 3</div><div class="fprice" style="color:#1a1e3a">1,982 €</div><div class="fbar"><div class="fbar-fill" style="width:5%;background:#1a1e3a"></div></div><span class="ftag"><span class="tag" style="background:rgba(26,30,58,.4);color:#2a2e50">base Fibo</span></span></div>
+    <div class="frow"><div class="flvl">Support 2</div><div class="fprice" style="color:#475569">2,720 €</div><div class="fbar"><div class="fbar-fill" style="width:24%;background:#475569"></div></div><span class="ftag"><span class="tag tw">S2</span></span></div>
+    <div class="frow"><div class="flvl">Fibo 38,2%</div><div class="fprice">3,168 €</div><div class="fbar"><div class="fbar-fill" style="width:40%;background:var(--green)"></div></div><span class="ftag"><span class="tag tg">S1 fort</span></span></div>
+    <div class="frow" style="background:rgba(129,140,248,.04);border-radius:6px;padding:7px 4px"><div class="flvl" style="color:var(--accent)">COURS</div><div class="fprice" style="color:var(--accent)">3,360 €</div><div class="fbar"><div class="fbar-fill" style="width:46%;background:var(--accent)"></div></div><span class="ftag"><span class="tag tp">sur support</span></span></div>
+    <div class="frow"><div class="flvl">Fibo 50%</div><div class="fprice" style="color:var(--blue)">3,620 €</div><div class="fbar"><div class="fbar-fill" style="width:55%;background:var(--blue)"></div></div><span class="ftag"><span class="tag tb">R1</span></span></div>
+    <div class="frow"><div class="flvl">Fibo 61,8%</div><div class="fprice" style="color:var(--warn)">3,886 €</div><div class="fbar"><div class="fbar-fill" style="width:65%;background:var(--warn)"></div></div><span class="ftag"><span class="tag tw">R2</span></span></div>
+    <div class="frow"><div class="flvl">Fibo 78,6%</div><div class="fprice" style="color:var(--orange)">4,361 €</div><div class="fbar"><div class="fbar-fill" style="width:82%;background:var(--orange)"></div></div><span class="ftag"><span class="tag to">R3</span></span></div>
+    <div class="frow"><div class="flvl">Fibo 100%</div><div class="fprice" style="color:var(--purple)">5,000 €</div><div class="fbar"><div class="fbar-fill" style="width:100%;background:var(--purple)"></div></div><span class="ftag"><span class="tag tp">pic 2025</span></span></div>
+  </div>
+
+  <div style="background:rgba(56,189,248,.07);border:1px solid rgba(56,189,248,.25);border-radius:8px;padding:14px 16px;margin:12px 0">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:8px">✅ RSI 49,26 — zone neutre · Consolidation saine · Support 3,36 € = zone d'accumulation</div>
+    <p style="color:#bae6fd;margin-bottom:6px;font-size:13.5px">Le RSI journalier à <strong style="color:#e0f2fe">49,26</strong> est parfaitement neutre — ni suracheté, ni survendu. Le titre a digéré +400% en quelques mois, ce qui est une correction normale et saine. Le support horizontal à <strong style="color:#e0f2fe">3,36 €</strong> est un niveau de résistance majeur de l'histoire longue du titre, désormais testé comme support.</p>
+    <p style="color:#bae6fd;margin-bottom:0;font-size:13.5px">Le MACD légèrement négatif indique une phase de compression — classique avant un nouveau mouvement directionnel. Le <strong style="color:#e0f2fe">démarrage de la phase clinique sepsis</strong> sera le prochain catalyseur capable de sortir le titre de cette compression. En attendant, <strong style="color:#e0f2fe">3,168 € (Fibo 38,2%)</strong> est le niveau de sécurité à surveiller si 3,36 € venait à céder.</p>
+  </div>
+  <p>L'Ichimoku journalier montre un Senkou Span A à 3,620 € (R1 dynamique) — le cours se situe en-dessous, dans le nuage, zone d'indécision technique normale après un fort mouvement. La sortie par le haut du nuage, à <strong>3,620 €</strong>, serait un signal haussier de reprise.</p>
+</div>
+
+<!-- CONSENSUS -->
+<div class="gap"></div>
+<div class="slbl">Consensus analystes au 12/03/2026</div>
+<div class="card">
+  <h3><span class="ic">📊</span> Couverture analytique limitée · Dossier en phase d'émergence</h3>
+  <p>Abionyx est peu suivi par les brokers — la société est en phase de développement pré-clinique principale, sans revenus médicaments, ce qui la rend difficile à modéliser par les approches DCF traditionnelles. Le financement France 2030 et les partenariats IHU/SEBIA constituent cependant des points d'ancrage.</p>
+  <div style="background:rgba(192,132,252,.07);border:1px solid rgba(192,132,252,.25);border-radius:8px;padding:14px 16px;margin:14px 0">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);margin-bottom:8px">💡 La valorisation d'Abionyx est binaire sur la phase clinique sepsis</div>
+    <p style="color:#e9d5ff;margin-bottom:6px;font-size:13.5px">La vraie question n'est pas "quel est l'objectif de cours à 3 mois" — c'est "est-ce que la phase clinique sepsis démarre en 2026 et avec quel partenaire ?"</p>
+    <p style="color:#e9d5ff;margin-bottom:0;font-size:13.5px"><strong style="color:#faf5ff">Le sepsis est un marché potentiel de plusieurs dizaines de milliards de dollars.</strong> Avec 11 millions de décès/an et zéro traitement approuvé, le premier acteur à montrer une efficacité clinique convaincante dans cet espace sera valorisé en conséquence. C'est la logique de l'optionalité : la capitalisation actuelle (~120 M€) ne paye qu'une petite partie de ce potentiel.</p>
+  </div>
+</div>
+
+<!-- CT MT LT -->
+<div class="gap"></div>
+<div class="slbl">Perspectives CT / MT / LT</div>
+<div class="pg">
+  <div class="pc">
+    <div class="hz" style="color:var(--warn)">🕐 CT · 0-3 mois</div>
+    <h4>Catalyseurs</h4>
+    <ul>
+      <li>Publication résultats 2025 ce soir</li>
+      <li>Clarification deal IHU Sepsis</li>
+      <li>Versements France 2030</li>
+      <li>Nouvelles données AAC Norum</li>
+      <li>Support 3,36 € à tenir</li>
+    </ul>
+    <h4 style="margin-top:10px;color:var(--warn)">Risques CT</h4>
+    <ul>
+      <li>Résultats interprétés négativement</li>
+      <li>RSI 49 = pas de momentum fort</li>
+      <li>Faible liquidité · fort spread</li>
+    </ul>
+  </div>
+  <div class="pc">
+    <div class="hz" style="color:var(--green)">📅 MT · 3-12 mois</div>
+    <h4>Moteurs</h4>
+    <ul>
+      <li>Démarrage phase clinique sepsis</li>
+      <li>Partenariat IHU finalisé</li>
+      <li>Deal "grand acteur du sepsis" (août 2025)</li>
+      <li>Optimisation bioproduction</li>
+      <li>Entrée brokers en couverture</li>
+    </ul>
+    <h4 style="margin-top:10px;color:var(--warn)">Risques MT</h4>
+    <ul>
+      <li>Retard démarrage phase clinique</li>
+      <li>Discussions partenariat avortées</li>
+      <li>Burn France 2030 sans revenus</li>
+    </ul>
+  </div>
+  <div class="pc">
+    <div class="hz" style="color:var(--purple)">🔭 LT · 12 mois+</div>
+    <h4>Thèse haussière</h4>
+    <ul>
+      <li>Sepsis = marché $30-50 Md potentiel</li>
+      <li>Premier acteur sur causalité apoA-I</li>
+      <li>Plateforme HDL → vectorisation médicaments</li>
+      <li>Données cliniques positives sepsis</li>
+      <li>Cible d'acquisition pharma majeure</li>
+    </ul>
+    <h4 style="margin-top:10px;color:var(--danger)">Risques LT</h4>
+    <ul>
+      <li>Echec phase clinique sepsis</li>
+      <li>Burn rate > France 2030 si retards</li>
+      <li>Concurrent sur le mécanisme apoA-I</li>
+    </ul>
+  </div>
+</div>
+
+<!-- VERDICT -->
+<div class="gap"></div>
+<div class="slbl">Mon avis personnel</div>
+<div class="verdict">
+  <div class="vt">💬 Verdict</div>
+  <p>Abionyx est un dossier <strong>asymétrique par excellence</strong> : une capitalisation de ~120 M€ sur un marché adressable théorique de plusieurs dizaines de milliards. C'est évidemment du conditionnel — mais la publication dans <em>Nature Scientific Reports</em> démontrant la causalité génétique de l'apoA-I dans le sepsis est le type de fondation scientifique sur laquelle se construisent les grandes histoires thérapeutiques.</p>
+  <p>Ce que j'apprécie fondamentalement dans ce dossier :</p>
+  <ul class="ul" style="margin:8px 0">
+    <li><span class="hl">IRIS Pharma</span> génère ~4 M€ de CA récurrent par an et tourne à l'équilibre — c'est un <span class="hl">filet de sécurité opérationnel rare</span> pour une biotech pré-revenue. Le "core" brûle peu de cash.</li>
+    <li class="neu"><span class="hlb">France 2030 (6,5 M€ à recevoir)</span> est un financement non dilutif de l'État — pas de dilution pour les actionnaires existants. La Banque Publique d'Investissement a validé la pertinence du dossier.</li>
+    <li><span class="hlp">IHU Sepsis + SEBIA</span> : deux partenaires de première catégorie. On ne signe pas un partenariat exclusif mondial avec SEBIA ou un accord avec l'IHU/AP-HP/CEA sans crédibilité scientifique réelle.</li>
+    <li class="neu">Le <span class="hlo">"grand acteur du sepsis"</span> identifié en août 2025 reste non nommé — si ces discussions aboutissent, c'est le re-rating total du dossier.</li>
+  </ul>
+  <p><strong>La nuance honnête :</strong> Abionyx est encore loin de la phase clinique de grande envergure et le sepsis est un cimetière de programmes cliniques — des dizaines de molécules y ont échoué ces 30 dernières années. L'approche apoA-I est différente dans son mécanisme, mais le risque d'échec clinique est réel et doit être pleinement intégré dans la thèse d'investissement.</p>
+  <div class="conclu">
+    🎯 <strong>Dossier optionnel à fort potentiel, adapté à un portefeuille biotech diversifié.</strong> <span style="color:var(--warn);font-weight:600">Support clé : 3,36 € puis 3,168 €. Résistances : 3,620 € → 3,886 € → 4,361 €. Catalyseur décisif : annonce démarrage phase clinique sepsis 2026 + résolution deal "grand acteur du sepsis" (août 2025). À ne pas surpondérer vu le stade pré-clinique principal.</span>
+  </div>
+</div>
+
+<div style="margin-top:20px;padding:12px;background:var(--surface);border-radius:8px;font-size:11.5px;color:var(--muted);text-align:center;border:1px solid var(--border)">
+  Sources : Communiqué résultats annuels 2025 Abionyx (12/03/2026), Communiqués nov. 2025 (IHU Sepsis, SEBIA), BusinessWire, Scientific Reports (Nature), ABC Bourse, Zonebourse · Analyse personnelle non professionnelle · Ne constitue pas un conseil en investissement · DYOR
+</div>
+
+</div>
+</body>
+</html>
